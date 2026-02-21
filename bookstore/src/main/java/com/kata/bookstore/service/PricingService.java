@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class PricingService {
 
-    public double calculateTotal() {
-        return 0.0;
+    public double calculateTotal(int quantity) {
+        return quantity*50.0;
     }
 }

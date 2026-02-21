@@ -12,6 +12,11 @@ class PricingServiceTest {
 
     @Test
     void shouldReturnZeroWhenCartIsEmpty() {
-        assertEquals(0.0, pricingService.calculateTotal());
+        assertEquals(0.0, pricingService.calculateTotal(0));
+    }
+
+    @Test
+    void shouldCalculatePriceForSingleBook() {
+        assertEquals(50.0, pricingService.calculateTotal(1));
     }
 }
